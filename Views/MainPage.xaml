@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ExemploAplicativo.Views.MainPage"
+             Title="Funcionários">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Label Text="Funcionários" HorizontalOptions="Center" TextColor="Red" Margin="10"/>
+        <Button x:Name="btnFuncionario1" Text="Funcionário 1" Clicked="btnFuncionario1_Clicked" Margin="10"/>
+        <Button x:Name="btnFuncionario2" Text="Funcionário 2" Clicked="btnFuncionario2_Clicked" Margin="10"/>
+        <Button x:Name="btnFuncionario3" Text="Funcionário 3" Clicked="btnFuncionario3_Clicked" Margin="10"/>
+    </VerticalStackLayout>
+</ContentPage>
