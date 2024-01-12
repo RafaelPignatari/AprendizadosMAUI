@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:ExemploAplicativo.ViewModels"             
+             xmlns:mo="clr-namespace:ExemploAplicativo.Models"       
+             x:Class="ExemploAplicativo.Views.ListaFuncionarios"
+             x:DataType="vm:FuncionariosViewModel"
+             Title="Funcionarios">
+    <FlexLayout Direction="Column">
+        <Frame Margin="5" Padding="5" FlexLayout.Basis="600">
+            <VerticalStackLayout Padding="10">
+                <Entry Placeholder="Id" Text="{Binding Funcionario.Id}"/>
+                <Entry Placeholder="Nome" Text="{Binding Funcionario.Nome}"/>
+                <Entry Placeholder="Email" Text="{Binding Funcionario.Email}"/>
+                <HorizontalStackLayout>
+                    <Label Text="Ativo" Margin="12" />
+                    <Switch IsToggled="{Binding Funcionario.Ativo}" />
+                </HorizontalStackLayout>
+
+                <Button Text="Adicionar Funcionário" Margin="10" Command="{Binding AdicionarCommand}"/>
+            </VerticalStackLayout>
+        </Frame>
+
+        <ListView FlexLayout.Grow="1" ItemsSource="{Binding Funcionarios}" ItemTapped="ListView_ItemTapped">
+            <ListView.Header>
+                <VerticalStackLayout BackgroundColor="#512BD4" Padding="5">
+                    <Label HorizontalOptions="Center" Text="Funcionários" TextColor="White" FontAttributes="Bold"/>
+                </VerticalStackLayout>
+            </ListView.Header>
+            <ListView.ItemTemplate>
+                <DataTemplate x:DataType="{x:Type mo:FuncionarioModel}">
+                    <TextCell Text="{Binding Id}" Detail="{Binding Nome}"/>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </FlexLayout>
+</ContentPage>

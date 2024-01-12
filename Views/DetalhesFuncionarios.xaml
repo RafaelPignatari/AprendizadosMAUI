@@ -7,11 +7,10 @@
              x:DataType="vm:DetalhesFuncionarioViewModel">
     <TableView Intent="Data">
         <TableSection Title="Informações Básicas">
-            <TextCell Text="Id Funcionário" Detail="{Binding Id}" />
-            <TextCell Text="Nome" Detail="{Binding Nome}" />
-            <EntryCell Label="Nome" Text="{Binding Nome}"/>
-            <TextCell Text="Email" Detail="{Binding Email}" />
-            <SwitchCell Text="Ativo" On="{Binding Ativo}" />
+            <TextCell Text="Id Funcionário" Detail="{Binding Funcionario.Id}" />
+            <TextCell Text="Nome" Detail="{Binding Funcionario.Nome}" />
+            <TextCell Text="Email" Detail="{Binding Funcionario.Email}" />
+            <SwitchCell Text="Ativo" On="{Binding Funcionario.Ativo}" />
         </TableSection>
     </TableView>
 </ContentPage>
