@@ -8,6 +8,15 @@
         <VerticalStackLayout
             VerticalOptions="Center"
             Spacing="25">
+
+            <Button 
+                x:Name="btnLog"
+                ImageSource="log.png"
+                HorizontalOptions="End"
+                VerticalOptions="Start"
+                Margin="15"
+                Clicked="btnLog_Clicked"/>
+
             <Image
                 x:Name="imageTest"
                 Source="dotnet_bot.png"
@@ -23,6 +32,7 @@
             <Label
                 x:Name="lbDescricao"
                 Text="Click on the button bellow to request a new image"
+                FontAutoScalingEnabled="True"
                 Style="{StaticResource SubHeadline}" />
 
             <Button

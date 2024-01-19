@@ -71,6 +71,10 @@ namespace ExemploImagem
             imageTest.RemoveBinding(Image.SourceProperty);
             imageTest.Source = null;
         }
-    }
 
+        private async void btnLog_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new LogView());
+        }
+    }
 }

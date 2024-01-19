@@ -12,12 +12,14 @@ namespace ExemploImagem.Helpers
                 {
                     var response = await httpClient.GetAsync(url);
 
+                    Logger.LogInformativo("Requisição GET feita com sucesso");
+
                     return await response.Content.ReadAsStringAsync();
                 }
             }
             catch (Exception ex)
             {
-                Logger.Log("Erro ao fazer requisição GET: " + ex.Message, MethodBase.GetCurrentMethod().Name, ex.StackTrace);
+                Logger.LogErro("Erro ao fazer requisição GET: " + ex.Message, MethodBase.GetCurrentMethod().Name, ex.StackTrace);
 
                 return null;
             }
