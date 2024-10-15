@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChamaActivityOutroApp", "ChamaActivityOutroApp.csproj", "{50A66F9C-03CA-4343-9693-D836E9A60ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OutroApp", "..\OutroApp\OutroApp.csproj", "{DBAE21DC-5150-4519-B3C8-2C2935EF8269}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50A66F9C-03CA-4343-9693-D836E9A60ABF}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBAE21DC-5150-4519-B3C8-2C2935EF8269}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A5226759-94A2-4205-B102-811BCD709115}
+	EndGlobalSection
+EndGlobal
